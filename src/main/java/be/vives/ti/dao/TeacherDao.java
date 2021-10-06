@@ -12,9 +12,9 @@ public class TeacherDao {
     private DataSource ds;
     private SchoolDatabaseStub db;
 
-    public TeacherDao() {
-        this.ds = new MyOwnDataSource();
-        this.db = new SchoolDatabaseStub();
+    public TeacherDao(DataSource ds, SchoolDatabaseStub db) {
+        this.ds = ds;
+        this.db = db;
     }
 
     public Teacher get(int teacherId) {

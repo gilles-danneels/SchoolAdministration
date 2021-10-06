@@ -7,8 +7,8 @@ public class DummyEmailService {
 
     private TemplateService templateService;
 
-    public DummyEmailService() {
-        this.templateService = new TemplateService();
+    public DummyEmailService(TemplateService templateService) {
+        this.templateService = templateService;
     }
 
     public void sendEmail(Teacher teacher, String message, Student student) {

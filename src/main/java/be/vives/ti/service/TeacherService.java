@@ -12,10 +12,10 @@ public class TeacherService {
     private StudentService studentService;
     private DummyEmailService dummyEmailService;
 
-    public TeacherService() {
-        this.teacherDao = new TeacherDao();
-        this.studentService = new StudentService();
-        this.dummyEmailService = new DummyEmailService();
+    public TeacherService(TeacherDao teacherDao, StudentService studentService, DummyEmailService dummyEmailService) {
+        this.teacherDao = teacherDao;
+        this.studentService = studentService;
+        this.dummyEmailService = dummyEmailService;
     }
 
     public void sendMessage(Integer fromTeacherId, String message, Integer toStudentId) {

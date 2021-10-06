@@ -8,10 +8,8 @@ public class TemplateService {
 
     private MailTemplate mailTemplate;
 
-    public TemplateService() {
-        this.mailTemplate = new MailTemplate("VIVES - Design your future",
-                "VIVES - all rights reserved",
-                "vives.jpg");
+    public TemplateService(MailTemplate mailTemplate) {
+        this.mailTemplate = mailTemplate;
     }
 
     private String getSeparator(){

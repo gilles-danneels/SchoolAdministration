@@ -9,8 +9,8 @@ public class StudentService {
 
     private StudentDao studentDao;
 
-    public StudentService() {
-        this.studentDao = new StudentDao();
+    public StudentService(StudentDao studentDao) {
+        this.studentDao = studentDao;
     }
 
     public List<Student> findAllStudentsFromClass(String className) {

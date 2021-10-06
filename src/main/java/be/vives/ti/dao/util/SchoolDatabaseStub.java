@@ -5,20 +5,21 @@ import be.vives.ti.model.Teacher;
 
 import java.util.ArrayList;
 
+// Geen aanpassingen nodig
 public class SchoolDatabaseStub {
 
     private ArrayList<Student> students;
     private ArrayList<Teacher> teachers;
 
     public SchoolDatabaseStub() {
-        this.students = new ArrayList<>();
-        this.teachers = new ArrayList<>();
+
         importStudents();
         importTeachers();
     }
 
 
     private void importStudents() {
+        this.students = new ArrayList<>();
         students.add(new Student(20,"Kiara", "Nunez", "3SD"));
         students.add(new Student(21,"Iyla", "Pickett", "3SD"));
         students.add(new Student(22,"Oliver", "Chavez", "3SD"));
@@ -46,6 +47,7 @@ public class SchoolDatabaseStub {
     }
 
     private void importTeachers() {
+        this.teachers = new ArrayList<>();
         teachers.add(new Teacher(1, "Valentin","Mengue"));
         teachers.add(new Teacher(2, "Max","Proschke"));
         teachers.add(new Teacher(3, "Shaw","Shoveller"));

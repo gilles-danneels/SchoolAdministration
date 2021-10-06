@@ -16,9 +16,9 @@ public class StudentDao {
     private DataSource ds;
     private SchoolDatabaseStub db;
 
-    public StudentDao() {
-        this.ds = new MyOwnDataSource();
-        this.db = new SchoolDatabaseStub();
+    public StudentDao(DataSource ds, SchoolDatabaseStub db) {
+        this.ds = ds;
+        this.db = db;
     }
 
     public Student get(int studentId) {

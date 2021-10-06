@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.SQLFeatureNotSupportedException;
 import java.util.logging.Logger;
 
+// Geen aanpassingen nodig
 public class MyOwnDataSource implements DataSource {
     @Override
     public Connection getConnection() throws SQLException {
