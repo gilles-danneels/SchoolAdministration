@@ -3,11 +3,13 @@ package be.vives.ti.dao;
 import be.vives.ti.dao.util.MyOwnDataSource;
 import be.vives.ti.dao.util.SchoolDatabaseStub;
 import be.vives.ti.model.Teacher;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+@Repository
 public class TeacherDao {
     private DataSource ds;
     private SchoolDatabaseStub db;

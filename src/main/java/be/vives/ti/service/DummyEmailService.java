@@ -2,7 +2,9 @@ package be.vives.ti.service;
 
 import be.vives.ti.model.Student;
 import be.vives.ti.model.Teacher;
+import org.springframework.stereotype.Service;
 
+@Service
 public class DummyEmailService {
 
     private TemplateService templateService;

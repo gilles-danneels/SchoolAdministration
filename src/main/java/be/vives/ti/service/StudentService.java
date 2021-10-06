@@ -2,9 +2,11 @@ package be.vives.ti.service;
 
 import be.vives.ti.dao.StudentDao;
 import be.vives.ti.model.Student;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class StudentService {
 
     private StudentDao studentDao;

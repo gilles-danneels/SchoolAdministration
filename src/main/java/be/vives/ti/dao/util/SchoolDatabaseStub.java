@@ -2,17 +2,18 @@ package be.vives.ti.dao.util;
 
 import be.vives.ti.model.Student;
 import be.vives.ti.model.Teacher;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 
 // Geen aanpassingen nodig
+@Component
 public class SchoolDatabaseStub {
 
     private ArrayList<Student> students;
     private ArrayList<Teacher> teachers;
 
     public SchoolDatabaseStub() {
-
         importStudents();
         importTeachers();
     }

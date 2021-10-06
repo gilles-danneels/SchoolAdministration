@@ -3,6 +3,7 @@ package be.vives.ti.dao;
 import be.vives.ti.dao.util.MyOwnDataSource;
 import be.vives.ti.dao.util.SchoolDatabaseStub;
 import be.vives.ti.model.Student;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Repository
 public class StudentDao {
 
     private DataSource ds;
