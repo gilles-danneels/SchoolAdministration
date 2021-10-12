@@ -1,4 +1,4 @@
-# SchoolAdministrationStart
+# SchoolAdministration oplossing Spring DI en IoC
 
 3 branches:
 - opgave : versie van waar de student start
